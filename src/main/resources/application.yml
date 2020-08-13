@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: redis-test
+  redis:
+    port: 6379
+    host: localhost
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.zx.redis.test.model
+
